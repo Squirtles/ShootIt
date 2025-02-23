@@ -1,15 +1,16 @@
-// Firebase configuration (Replace with your own Firebase config)
+// Firebase configuration (Your provided config)
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    databaseURL: "YOUR_DATABASE_URL",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyCWEn-9T7KyuIbhz9OEfFLfnEL-9rlS0GE",
+    authDomain: "spaceshooter-38f92.firebaseapp.com",
+    projectId: "spaceshooter-38f92",
+    storageBucket: "spaceshooter-38f92.firebasestorage.app",
+    messagingSenderId: "318898775595",
+    appId: "1:318898775595:web:3757c8c70dc90859646c6e",
+    measurementId: "G-D9C0N3Z283",
+    databaseURL: "https://spaceshooter-38f92-default-rtdb.firebaseio.com" // Added this (required for Realtime Database)
 };
 
-// Initialize Firebase
+// Initialize Firebase (using the older SDK)
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const database = firebase.database();
@@ -134,7 +135,6 @@ function changeSkin(newSkin) {
 }
 
 function buySkin(skinName) {
-    // Simple payment simulation (implement real payment system here)
     const price = skinName === 'red' ? 1 : 2;
     if (confirm(`Buy ${skinName} skin for $${price}?`)) {
         changeSkin(skinName);
