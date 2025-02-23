@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+#auth-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#gameCanvas {
+    background: #000;
+}
+
+#skin-selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+#chat-container {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+#chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
+
+input, button {
+    margin: 5px;
+    padding: 5px;
+}
